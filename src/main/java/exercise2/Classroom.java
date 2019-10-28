@@ -3,25 +3,31 @@ package exercise2;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Classroom {
+public class Classroom
+{
 	private final Teacher teacher;
 	private final Student[] students;
 
-	public Classroom(Teacher teacher, Student[] students) {
+	public Classroom(Teacher teacher, Student[] students)
+	{
 		this.teacher = teacher;
 		this.students = students;
 	}
 
-	public Teacher getTeacher() {
+	public Teacher getTeacher()
+	{
+
 		return teacher;
 	}
 
-	public Student[] getStudents() {
+	public Student[] getStudents()
+	{
 		return students;
 	}
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return String.format("Classroom[teacher=%s, %d students]", teacher, students.length);
 	}
 
@@ -35,7 +41,9 @@ public class Classroom {
 	}
 
 	@Override
-	public int hashCode() {
+	public int hashCode()
+	{
+
 		return Objects.hash(teacher, students);
 	}
 }
